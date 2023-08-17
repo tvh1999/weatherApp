@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="background-image">
+        <img
+          class="cloud-illustration-image"
+          src="./images/photo-PartlyCloudy.webp"
+          alt="cloud-image"
+        />
+      </div>
+      <div class="detail-infos">
+        <span class="temperature"></span>
+        <div class="date">
+          <span class="location-name"></span>
+          <span class="time"></span>
+        </div>
+        <div class="atmosphere">
+          <span class="atmosphere-emoji"></span>
+          <span class="atmosphere-state"></span>
+        </div>
+      </div>
+      <div class="infos-display">
+        <div class="locations">
+          <h5 class="heading">Locations</h5>
+          <h6 class="location locations-0" data-location="0">Moscow</h6>
+          <h6 class="location locations-1" data-location="1">Manchester</h6>
+          <h6 class="location locations-2" data-location="2">New York</h6>
+          <h6 class="location locations-3" data-location="3">California</h6>
+        </div>
+        <div class="weather-details">
+          <h5 class="heading">Weather Details</h5>
+          <div class="weather-infos-container">
+            <div class="infos-headings">
+              <h6 class="cloudy">Cloudy</h6>
+              <h6 class="humidity">Humidity</h6>
+              <h6 class="wind">Wind</h6>
+            </div>
+            <div class="infos-stats">
+              <span class="cloud-stat"></span>
+              <span class="humidity-stat"></span>
+              <span class="wind-stat"></span>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming-weathers">
+          <h5 class="heading">Upcoming days</h5>
+          <ul class="forecast-container">
+            <!-- <li class="forecast-weather">
+              ☁:<span class="forecast-cloudy">12%</span> 💧:<span
+                class="forecast-humidity"
+                >12%</span
+              >
+              💨:<span class="forecast-wind">12km/h</span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="blur-placeholder"></div> -->
+    </main>
+  </body>
+</html>
